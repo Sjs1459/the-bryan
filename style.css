@@ -1,0 +1,338 @@
+    body {
+        background-image: url(./IMG/Banner\ Paisagem\ Conferência\ Cristã\ De\ Jovens\ Moderno\ Preto\ E\ Amarelo.png); 
+        background-size: cover;
+        color: #333;
+        font-family: helvetica, Roboto; 
+    }
+
+    .navbar {
+        min-height: 50px; 
+        padding: 20px 0;
+    }
+        
+
+    .navbar .navbar-brand img {
+        width: 360px;
+        height: auto;
+    }
+
+    .content-container {
+        background-color: #f8f8ff;
+        border-radius: 0\px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.287);
+        padding: 40px;
+        margin-bottom: 40px;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .navbar-nav {
+        margin-top: 10px;
+    }
+    
+    .nav-link  {
+        color: #000000 !important;
+        font-size: 18px;
+        border-bottom: none;
+        transition: border-bottom 0.1s ease, font-size 0.2s ease, padding-bottom 0.2s ease; }
+        
+    .nav-link:hover {
+        border-bottom: 2px solid #FF6F3C;  
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+
+    .button {
+        background-color: #FF6F3C; 
+        border-radius: 0;
+        padding: 10px 15px;
+        border: none;
+        color: #ffffff;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        position: relative;
+        margin-top: 10px;
+    }
+
+    .button:hover {
+        background-color: #ffffff; 
+        color: #FF6F3C;
+        transform: scale(1.05);
+    }
+
+    .contate h1 {
+        font-size: 48px;
+        font-weight: 600;
+    }
+
+    .contate p {
+        text-align: justify;
+    }
+
+    .footer {
+        background: black;
+        color: #ffffff;
+        padding: 12px 0;
+        text-align: center;
+        box-shadow: 1px 0 2px rgba(0, 0, 0, 0.342);
+    }
+
+    
+
+    .icons {
+        width: 40px;
+        height: 40px;
+    }
+
+    .card-contato {
+        background-color: #e3d8b7;
+        width: 100%; 
+        height: 200px;
+        border-radius: 0;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        text-align: center;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.322);
+        cursor: pointer;
+    }
+
+    .servicos {
+        position: relative;
+        overflow: hidden;
+        background: #fff;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .servicos img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+
+    .servicos .overlay {
+        position: relative;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .servicos:hover img {
+        opacity: 1;
+    }
+
+    .servicos:hover {
+        background-color: #000000;
+    }
+
+    .blablabla {
+        height: 200px;
+        background-image: url(./IMG/Quebra.png);
+        background-size: cover;
+        background-position: center;
+        display: flex; 
+        justify-content: center;
+        align-items: center; 
+        margin-bottom: 50px;
+    }
+
+    .blablabla a {
+        color: #FF6F3C;
+    }
+
+    .img-servicos {
+        background-color: transparent;
+        background-size: cover;
+        height: 500px;
+        border: 1px solid #000;
+        border-radius: 0;
+        transition: transform 0.5s, opacity 0.5s;
+        opacity: 0.8;
+        justify-content: center;
+        align-items: center; 
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .img-servicos h5, p{
+    margin: 0;
+    margin-top: 10px;
+    }
+
+    .img-servicos:hover {
+        background-image: url(./IMG/barba.png);
+        transform: scale(1.05);
+        opacity: 1;
+        color:#ffffff ;
+        border: 0 ;
+    }
+
+    .img-servicos1 {
+        background-color: transparent;
+        background-size: cover;
+        height: 500px;
+        border: 1px solid #000;
+        border-radius: 0;
+        transition: transform 0.5s, opacity 0.5s;
+        opacity: 0.8;
+    justify-content: center;
+        align-items: center; 
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .img-servicos1 h5, p{
+    margin: 0;
+    margin-top: 10px;
+    }
+
+    .img-servicos1:hover {
+        background-image: url(./IMG/Corte.png);
+        transform: scale(1.05);
+        opacity: 1;
+        color:#ffffff ;
+        border: 0 ;
+    }
+    .img-servicos2 {
+        background-color: transparent;
+        background-size: cover;
+        height: 500px;
+        border: 1px solid #000;
+        border-radius: 0;
+        transition: transform 0.5s, opacity 0.5s;
+        opacity: 0.8;
+    justify-content: center;
+        align-items: center; 
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .img-servicos2 h5, p{
+    margin: 0;
+    margin-top: 10px;
+    }
+
+    .img-servicos2:hover {
+        background-image: url(./IMG/Limpezadepele.png);
+        transform: scale(1.05);
+        opacity: 1;
+        color:#ffffff ;
+        border: 0 ;
+    }
+    .img-servicos4 {
+        background-color: transparent;
+        background-size: cover;
+        height: 500px;
+        border: 1px solid #000;
+        border-radius: 0;
+        transition: transform 0.5s, opacity 0.5s;
+        opacity: 0.8;
+    justify-content: center;
+        align-items: center; 
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .img-servicos4 h5, p{
+    margin: 0;
+    margin-top: 10px;
+    }
+
+    .img-servicos4:hover {
+        background-image: url(./IMG/Platinado.png);
+        transform: scale(1.05);
+        opacity: 1;
+        color:#ffffff ;
+        border: 0 ;
+    }
+    .img-servicos5 {
+        background-color: transparent;
+        background-size: cover;
+        height: 500px;
+        border: 1px solid #000;
+        border-radius: 0;
+        transition: transform 0.5s, opacity 0.5s;
+        opacity: 0.8;
+    justify-content: center;
+        align-items: center; 
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .img-servicos5 h5, p{
+    margin: 0;
+    margin-top: 10px;
+    }
+
+    .img-servicos5:hover {
+        background-image: url(./IMG/Luzes.png);
+        transform: scale(1.05);
+        opacity: 1;
+        color:#ffffff ;
+        border: 0 ;
+    }
+    .calendar {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 10px;
+        margin: 20px;
+    }
+    .day {
+        background: white;
+        border: 1px solid #ccc;
+        padding: 20px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .day:hover {
+        background: #007bff;
+        color: white;
+    }
+   
+    .form {
+        background-color: rgba(255, 255, 255, 0.808);
+        padding: 40px;
+        border-radius: 0px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.315);
+    }
+    
+    .form-field {
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-top: 10px;
+    }
+
+    .modal-dialog {
+        max-width: 50%; /* Largura maior */
+        height: 100%; 
+        display: flex;
+        
+    
+    }
+    .button1 {
+        width: 100%;
+        padding: 10px ;
+    }
+
+    .costas{
+        background-color: rgba(255, 255, 255, 0.329);
+         backdrop-filter: blur(3px);
+         transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+       overflow: hidden;
+    }
+
+    .btn-close {
+        font-size: 1.5rem;
+        color: black;
+    }
+
+    .modal-content{
+       border-radius: 0px;
+       text-align: center;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
