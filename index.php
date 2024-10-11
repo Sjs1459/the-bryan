@@ -18,8 +18,12 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent"> 
                     <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="?page=index">Home</a>
+                    </li>
+                   
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="?page=servicos">Serviços</a>
                         </li>
@@ -29,16 +33,13 @@
                         <li class="nav-item">
                             <a class="nav-link" href="?page=contato">Contate-nos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./sobre.html">Sobre</a>
-                        </li>
                     </ul>
                     
                 </div>
             </div>
         </nav>
     </header>
-    <a class="logo" href="./index.html">
+    <a class="logo" href="?page=index">
         <img src="./IMG/logo.png" class="d-inline-block" alt="Logo">
     </a>  
  
@@ -69,8 +70,41 @@
         }
     ?>
     </div>
+    <script>
+    function selectService(servicos, preco) {
+        // Atualiza o valor total no formulário de agendamento
+        const appointmentTotal = document.getElementById('valorTotal');
+        if (appointmentTotal) {
+            appointmentTotal.textContent = preco.toFixed(2);
+        }
+
+        // Atualiza o valor total no formulário de edição
+        const editTotal = document.getElementById('valorTotalEdit');
+        if (editTotal) {
+            editTotal.textContent = preco.toFixed(2);
+        }
+        
+        let inputServico = document.createElement('input');
+        inputServico.type = 'hidden';
+        inputServico.name = 'servico';
+        inputServico.value = servicos;
+        
+        // Adiciona o input de serviço ao formulário de agendamento
+        const appointmentForm = document.getElementById('appointmentForm');
+        if (appointmentForm) {
+            appointmentForm.appendChild(inputServico);
+        }
+
+        // Adiciona o input de serviço ao formulário de edição
+        const editForm = document.getElementById('editAppointmentForm');
+        if (editForm) {
+            editForm.appendChild(inputServico.cloneNode());
+        }
+    }
+</script>
+
     <script src="./script.js"></script>
-    <footer class="footer">
+    <footer class="footer fixed-bottom">
         <p>&copy; 2024 Barbearia The Bryan - Todos os direitos reservados.</p>
     
     </footer>

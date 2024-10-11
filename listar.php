@@ -1,5 +1,5 @@
 <h2 class="fw-light text-center mt-3">Listar Cadastros:</h2>
-<hr>
+
 <?php
     // Consulta SQL
     $sql = "SELECT * FROM agendamentos";
@@ -14,7 +14,7 @@
     $qtd = $result->num_rows;
 
     if ($qtd > 0) {
-         echo "<div class='container'> ";
+         echo "<div class='tabela container'> ";
         echo "<table class='table table-bordered m-2 p-2'>";
         echo "<tr>";
         echo "<th>#</th>";
@@ -49,7 +49,7 @@
         echo "</table>";
         echo "</div>";
     } else {
-        echo "<p class='alert alert-danger m-2 p-2'>Não encontrou resultados!</p>";
+        echo "<p class=' alerta container'>Não encontrou resultados!</p>";
     }
 
      // Feche a conexão com o banco de dados

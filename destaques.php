@@ -30,37 +30,34 @@
                         <select class="form-select" id="horario" name="horario" required></select>
                     </div>
                 </div>
-                <div class="mb-4">
+                 <div class="mb-4">
                     <label class="form-label">Tipo de Serviço</label>
                     <div class="row">
                         <div class="col-12 col-md-4 mb-3">
-                            <label class="card animacao-card" data-preco="25">
-                                <div class="card-body text-center">
+                            <div class="card animacao-card" data-preco="25">
+                                <div class="card-body text-center" onclick="selectService('Corte de Cabelo', 25)">
                                     <h5 class="card-title">Corte de Cabelo</h5>
-                                    <input type="radio" name="servico" value="Corte de Cabelo" required>
                                 </div>
-                            </label>
+                            </div>
                         </div>
                         <div class="col-12 col-md-4 mb-3">
-                            <label class="card animacao-card" data-preco="20">
-                                <div class="card-body text-center">
+                            <div class="card animacao-card" data-preco="20">
+                                <div class="card-body text-center" onclick="selectService('Barba', 20)">
                                     <h5 class="card-title">Barba</h5>
-                                    <input type="radio" name="servico" value="Barba" required>
                                 </div>
-                            </label>
+                            </div>
                         </div>
                         <div class="col-12 col-md-4 mb-3">
-                            <label class="card animacao-card" data-preco="15">
-                                <div class="card-body text-center">
+                            <div class="card animacao-card" data-preco="15">
+                                <div class="card-body text-center" onclick="selectService('Limpeza de Pele', 15)">
                                     <h5 class="card-title">Limpeza de Pele</h5>
-                                    <input type="radio" name="servico" value="Limpeza de Pele" required>
                                 </div>
-                            </label>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="mb-4">
-                    <h5>Total: R$<span id="valorTotal">0</span></h5>
+                    <h5>Total: R$<span id="valorTotal">0.00</span></h5>
                 </div>
                 <div class="modal-footer">
                     <button type="submit" class="button button1">Enviar</button>

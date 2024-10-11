@@ -20,26 +20,24 @@ switch($_REQUEST["acao"]) {
             echo "<script>location.href='?page=listar';</script>";
         }
         break;
-
-    case 'editar':
-        $id = intval($_POST["id"]);
-        $nome = $conn->real_escape_string($_POST["nome"]);
-        $email = $conn->real_escape_string($_POST["email"]);
-        $date = $conn->real_escape_string($_POST["data"]);  // Alterado para "data"
-        $horario = $conn->real_escape_string($_POST["horario"]);
-        $servico = $conn->real_escape_string($_POST["servico"]);
-
-        $sql = "UPDATE agendamentos SET NOME='$nome', EMAIL='$email', DATA='$date', HORARIO='$horario', SERVICO='$servico' WHERE id=$id"; // Correção na tabela "agendamentos"
-
-        if ($conn->query($sql) === TRUE) {
-            echo "<script>alert('Atualizado com sucesso!');</script>";
-            echo "<script>location.href='?page=listar';</script>";
-        } else {
-            echo "<script>alert('Não foi possível atualizar!');</script>";
-            echo "<script>location.href='?page=listar';</script>";
-        }
-        break;
-
+            case 'editar':
+                $id = intval($_POST["id"]);
+                $nome = $conn->real_escape_string($_POST["nome"]);
+                $email = $conn->real_escape_string($_POST["email"]);
+                $data = $conn->real_escape_string($_POST["data"]);  
+                $horario = $conn->real_escape_string($_POST["horario"]);
+                $servico = $conn->real_escape_string($_POST["servico"]); // Agora recebendo o serviço do campo oculto
+        
+                $sql = "UPDATE agendamentos SET NOME='$nome', EMAIL='$email', DATA='$data', HORARIO='$horario', SERVICO='$servico' WHERE id=$id";
+        
+                if ($conn->query($sql) === TRUE) {
+                    echo "<script>alert('Atualizado com sucesso!');</script>";
+                    echo "<script>location.href='?page=listar';</script>";
+                } else {
+                    echo "<script>alert('Não foi possível atualizar!');</script>";
+                    echo "<script>location.href='?page=listar';</script>";
+                }
+                break;
     case 'excluir':
         $id = intval($_REQUEST["id"]);
 

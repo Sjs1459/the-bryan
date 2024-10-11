@@ -334,10 +334,10 @@
     }
 
 
-    .table table-bordered{
-       display: flex;
-
+    .tabela{
+      border: none;
     }
+   
     html {
         scroll-behavior: smooth;
     }
