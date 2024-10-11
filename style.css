@@ -333,6 +333,11 @@
        text-align: center;
     }
 
+
+    .table table-bordered{
+       display: flex;
+
+    }
     html {
         scroll-behavior: smooth;
     }
