@@ -19,7 +19,6 @@
                 </div>
                 <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card img-servicos shadow-sm p-3">
-                        <!--https://svgsilh.com/pt/image/158079.html site que eu peguei essa bomba-->
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"  
  width="60" height="80" viewBox="0 0 1280.000000 640.000000"
  preserveAspectRatio="xMidYMid meet">

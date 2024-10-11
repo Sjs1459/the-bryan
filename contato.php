@@ -75,7 +75,6 @@
                                             <div class="col-12 col-md-6 mb-3">
                                                 <label for="horario" class="form-label">Horário</label>
                                                 <select class="form-select" id="horario" required>
-                                                    <!-- Opções de horário serão preenchidas aqui via JavaScript -->
                                                 </select>
                                             </div>
                                         </div>
