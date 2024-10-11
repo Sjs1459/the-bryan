@@ -95,7 +95,7 @@
                 <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card img-servicos shadow-sm p-3">
                         <h5>PIGMENTAÇÃO</h5>
-                        <p></p>
+                        <p>A pigmentação capilar realça a cor dos cabelos, trazendo brilho e definição. Ideal para cobrir fios brancos ou intensificar a cor, oferece um visual natural e elegante.</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 mb-4">
