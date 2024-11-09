@@ -72,13 +72,13 @@
     </div>
     <script>
     function selectService(servicos, preco) {
-        // Atualiza o valor total no formulário de agendamento
+        
         const appointmentTotal = document.getElementById('valorTotal');
         if (appointmentTotal) {
             appointmentTotal.textContent = preco.toFixed(2);
         }
 
-        // Atualiza o valor total no formulário de edição
+       
         const editTotal = document.getElementById('valorTotalEdit');
         if (editTotal) {
             editTotal.textContent = preco.toFixed(2);
@@ -89,13 +89,13 @@
         inputServico.name = 'servico';
         inputServico.value = servicos;
         
-        // Adiciona o input de serviço ao formulário de agendamento
+     
         const appointmentForm = document.getElementById('appointmentForm');
         if (appointmentForm) {
             appointmentForm.appendChild(inputServico);
         }
 
-        // Adiciona o input de serviço ao formulário de edição
+    
         const editForm = document.getElementById('editAppointmentForm');
         if (editForm) {
             editForm.appendChild(inputServico.cloneNode());

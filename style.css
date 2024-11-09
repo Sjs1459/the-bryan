@@ -305,7 +305,7 @@
     }
 
     .modal-dialog {
-        max-width: 50%; /* Largura maior */
+        max-width: 50%; 
         height: 100%; 
         display: flex;
         

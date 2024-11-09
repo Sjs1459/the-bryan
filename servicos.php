@@ -19,7 +19,6 @@
                 </div>
                 <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card img-servicos shadow-sm p-3">
-                        <!--https://svgsilh.com/pt/image/158079.html site que eu peguei essa bomba-->
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"  
  width="60" height="80" viewBox="0 0 1280.000000 640.000000"
  preserveAspectRatio="xMidYMid meet">
@@ -95,7 +94,7 @@
                 <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card img-servicos shadow-sm p-3">
                         <h5>PIGMENTAÇÃO</h5>
-                        <p></p>
+                        <p>A pigmentação capilar realça a cor dos cabelos, trazendo brilho e definição. Ideal para cobrir fios brancos ou intensificar a cor, oferece um visual natural e elegante.</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 mb-4">

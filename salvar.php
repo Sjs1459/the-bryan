@@ -5,12 +5,12 @@ switch($_REQUEST["acao"]) {
     case 'cadastrar':
         $nome = $conn->real_escape_string($_POST["nome"]);
         $email = $conn->real_escape_string($_POST["email"]);
-        $data = $conn->real_escape_string($_POST["data"]);  // Alterado para "data"
+        $data = $conn->real_escape_string($_POST["data"]); 
         $horario = $conn->real_escape_string($_POST["horario"]);
         $servico = $conn->real_escape_string($_POST["servico"]);
 
         $sql = "INSERT INTO agendamentos (NOME, EMAIL, DATA, HORARIO, SERVICO)
-                VALUES ('$nome', '$email', '$data', '$horario', '$servico')"; // Correção na tabela "agendamentos"
+                VALUES ('$nome', '$email', '$data', '$horario', '$servico')"; 
 
         if ($conn->query($sql) === TRUE) {
             echo "<script>alert('Agendamento realizado com sucesso!');</script>";
@@ -26,7 +26,7 @@ switch($_REQUEST["acao"]) {
                 $email = $conn->real_escape_string($_POST["email"]);
                 $data = $conn->real_escape_string($_POST["data"]);  
                 $horario = $conn->real_escape_string($_POST["horario"]);
-                $servico = $conn->real_escape_string($_POST["servico"]); // Agora recebendo o serviço do campo oculto
+                $servico = $conn->real_escape_string($_POST["servico"]); 
         
                 $sql = "UPDATE agendamentos SET NOME='$nome', EMAIL='$email', DATA='$data', HORARIO='$horario', SERVICO='$servico' WHERE id=$id";
         
@@ -41,7 +41,7 @@ switch($_REQUEST["acao"]) {
     case 'excluir':
         $id = intval($_REQUEST["id"]);
 
-        $sql = "DELETE FROM agendamentos WHERE id=$id"; // Correção para a tabela "agendamentos"
+        $sql = "DELETE FROM agendamentos WHERE id=$id"; 
 
         if ($conn->query($sql) === TRUE) {
             echo "<script>alert('Excluído com sucesso!');</script>";
